@@ -1,0 +1,28 @@
+{
+  "name": "parcel-reporter-asar",
+  "version": "0.0.1",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^2.0.0-nightly.409"
+  },
+  "engines": {
+    "parcel": "^2.0.0-nightly.399"
+  },
+  "scripts": {
+    "dev": "parcel watch --target lib ./src/index.js",
+    "build": "parcel build --target lib ./src/index.js"
+  },
+  "targets": {
+    "lib": {
+      "distDir": "./lib",
+      "engines": {
+        "node": "14.8.0"
+      }
+    }
+  },
+  "dependencies": {
+    "@parcel/plugin": "^2.0.0-alpha.3",
+    "asar": "^3.0.3"
+  }
+}
